@@ -9,7 +9,7 @@ while message = gets.chomp
   if message == 'BYE'
     break
   end
-  if message == message.upcase
+  if message == message.upcase && message != ''
     year = min_year + rand(rand_max)
     puts "いやー、#{year}年以来ないねー!"
   else
