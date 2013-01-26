@@ -125,30 +125,6 @@ puts (not i_am_Chris)
 
 puts "====================="
 
-puts '"99本のビールが壁に..." 遠足などでよく歌われる古典的な童謡の歌詞、"99 Bottles of Beer on the Wall" を 出力するプログラムを書いてみましょう。'
-
-def get_numeration(num)
-  if num == 1
-    return "Bottle"
-  else
-    return "Bottles"
-  end
-end
-
-99.times do |i| # 0..99
-  num = 99 - i
-  numeration = get_numeration(num)
-  s  = "%d %s of beer on the wall\n" % [num, numeration]
-  s += "%d %s of beer\n" % [num, numeration]
-  s += "Take one down and pass it around\n"
-  num -= 1
-  numeration = get_numeration(num)
-  s += "%d %s of beer on the wall\n\n" % [num, numeration]
-  puts s
-end
-
-puts "====================="
-
 puts "耳の遠いおばあちゃんのプログラム"
 
 message = ""
