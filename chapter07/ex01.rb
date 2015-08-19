@@ -17,3 +17,19 @@ puts "Original: " + words.to_s
 puts "Sorted: " + words.sort.to_s
 
 puts "好きな数だけ単語の入力をしてもらい、アルファベット順に並べ変えて出力するようなプログラムおわり"
+
+puts "sort を使わない場合"
+
+words = []
+
+while word = gets.chomp
+  if word == ''
+    break
+  end
+  words << word
+end
+
+puts "Original: " + words.to_s
+puts "Sorted: " + words.sort_by { |w| w }.to_s
+
+puts "sort を使わない場合(おわり)"
